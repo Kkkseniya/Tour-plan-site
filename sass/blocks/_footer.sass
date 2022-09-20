@@ -1,0 +1,175 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding-top: 108px
+  padding-bottom: 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-gap: 20px
+    column-gap: 32px
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+    margin-bottom: 99px
+  &__logo
+    display: block
+    width: 153px
+    height: 175px
+    grid-row: 1/3
+    margin-top: 30px
+    margin-bottom: 0
+  &__image
+    width: 100%
+    height: 100%
+  &__categories
+    grid-row: 1/4
+  &__social
+    &-network
+      grid-row: 2/4
+      grid-column: span 2
+      display: flex
+      align-items: start
+    &-links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+  &__contact
+    &-details
+      grid-column: span 2
+      margin-top: 12px
+    &-form
+      grid-column: span 2
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &-wrapper
+      display: flex
+      width: 100%
+      justify-content: space-between
+      align-items: center
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+  &__item
+    display: flex
+    align-items: flex-start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+    &--mb-2
+      margin-bottom: 17px
+  &__icon
+    // margin-left: 8px    
+    &-wrapper
+      min-width: 40px
+    &--i1
+      height: 19px
+      width: 14px
+      margin-top: 5px
+      margin-left: 4px
+    &--i2
+      height: 20px
+      width: 20px
+      margin-top: 7px
+      margin-left: 2px
+    &--i3
+      width: 17px
+      height: 13px
+      margin-top: 8px
+      margin-left: 2px
+  &__link
+    text-decoration: none
+    color: inherit
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-top: 0
+    margin-bottom: 16px
+    text-transform: uppercase
+    &--inline
+      margin-bottom: 0
+      // margin-right: 43px
+      margin-right: 44px
+    &--mb-3
+      margin-bottom: 23px
+      margin-left: -2px
+    &--mb-mess
+      margin-bottom: 34px
+  &__text
+    color: $footer-text-color
+    margin-top: 0
+    margin-bottom: 20px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    margin-left: -2px
+  &__input
+    width: 100%
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &-group
+      width: 100%
+      margin-bottom: 15px
+      flex-basis: 47%
+  &__message
+    flex-basis: 100%
+    margin-bottom: 19px
+    height: 123px
+    resize: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $footer-info-color
+  &__bottom
+    &-info
+      display: flex
+      align-items: center
+      justify-content: end
+    &-ul
+      list-style: none
+      margin: 0
+      padding: 0
+      max-width: 560px
+      flex-basis: 70%
+    &-item
+      display: inline-block
+      margin-right: 8px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+    &-icons
+      width: 136px
+      height: 22px
+  &__legal
+    display: flex
+    justify-content: end
+    &-block
+      margin-right: 5px
+.group-wrapper
+  display: flex
+  // flex-direction: row
+  width: 100%
+  justify-content: space-between
+  align-items: flex-start
+.social-icon
+  height: 20px
+  width: 20px

@@ -1,0 +1,116 @@
+.navbar
+  background-color: #fff
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 40px
+    &__menu-button
+      display: none
+  &-bottom
+    background-color: $dark
+  &__search
+    margin-right: auto
+    margin-left: 108px
+  &-menu
+    list-style-type: none
+    margin: 0
+    padding: 31px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $light
+    &__link
+      color: inherit
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 18px
+    &__item
+      &--mobile
+        &--visible
+          display: none
+.logo
+  // position: relative
+  width: 177px
+  height: 24px
+  &__image
+    display: block
+    width: 100%
+    height: 100%
+  // &::before
+  //   position: absolute
+  //   top: 0
+  //   left: -75%
+  //   z-index: 2
+  //   display: block
+  //   content: ''
+  //   width: 50%
+  //   height: 100%
+  //   background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%)
+  //   transform: skewX(-25deg)
+  // &:hover::before
+  //   animation: shine .75s
+.search
+  display: flex
+  position: relative
+  overflow: hidden
+  border-radius: 6px
+  height: 40px
+  &__cursor
+    &::before
+      content: ''
+      display: none
+      position: absolute
+      left: 116px
+      top: 10px
+      width: 0.1em
+      height: 50%
+      background-color: $footer-text-color
+      opacity: 1
+  &__input
+    width: 350px
+    height: 40px
+    padding-left: 23px
+    padding-right: 75px
+    background-color: #F5FAFE
+    border: none
+    font-size: 12px
+    line-height: 15px
+    color: $text-color
+    &:not(:focus) + .search__cursor:before
+      display: inline-block
+      animation: cursor 1200ms infinite step-end
+  &__button
+    position: absolute
+    cursor: pointer
+    width: 65px
+    height: 100%
+    top: 0
+    right: 0
+    border: none
+    background-color: $primary
+    & img
+      width: 16px
+      height: 16px
+.user
+  display: flex
+  align-items: center
+  text-decoration: none
+  &__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+  &__name
+    max-width: 100px
+    text-align: center
+    margin-left: 18px
+    font-size: 14px
+    line-height: 18px
+    color: $text-color
+@keyframes cursor
+  50%
+    background: transparent
+

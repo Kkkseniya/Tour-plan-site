@@ -1,0 +1,83 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    padding: 33px 88px
+    background-color: $dark
+    transform: translate(-50%, -50%)
+    color: $light
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    transition: opacity 0.2s
+    max-height: 94%
+    &--visible
+      visibility: visible
+      opacity: 1
+      overflow-y: auto
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+    & img 
+      height: 16px
+      width: 16px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-top: 0
+    margin-bottom: 0
+    text-transform: uppercase
+    text-align: center
+  &__input
+    width: 100%
+    margin-top: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    margin-bottom: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $footer-info-color
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &-wrapper
+      display: flex
+      width: 100%
+      justify-content: space-between
+      align-items: center
